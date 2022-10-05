@@ -94,7 +94,8 @@ class VisualOdometry:
         return q1, q2
 
     def estimate_pose(self, q1, q2):
-        """This function estimates the relative pose between two images.
+        """
+        This function estimates the relative pose between two images.
         It first calculates the essential matrix E using the image correspondences,
         then decomposes E to obtain the rotation matrix R and the translation vector t.
         Parameters
